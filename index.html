@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aprende Haciendo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>🧠 Aprende Haciendo</h1>
+    <p>Aprende lo que estudias y descubre cómo llevarlo a la vida real.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h2>Aprender no debería ser solo memorizar.</h2>
+    <p>Esta plataforma separa dos formas de aprender: dominar los contenidos académicos y descubrir para qué sirven fuera del aula.</p>
+  </section>
+
+  <nav class="cards">
+    <button onclick="showSection('mates')">📚 Matemáticas — Aprende y domina</button>
+    <button onclick="showSection('vida')">🌎 Matemáticas — Llévalas a la vida real</button>
+    <button onclick="showSection('economia')">💼 Economía — Aprende y aplica</button>
+  </nav>
+
+  <section id="mates" class="section hidden">
+    <h2>📚 Matemáticas — Aprende y domina</h2>
+    <p>La parte académica: teoría clara, ejemplos, ejercicios y retos para 2.º de Bachillerato.</p>
+    <div id="topics"></div>
+  </section>
+
+  <section id="vida" class="section hidden">
+    <h2>🌎 Matemáticas — Llévalas a la vida real</h2>
+    <p>Las matemáticas no terminan en un examen. Aquí puedes explorar cómo aparecen en profesiones y situaciones reales.</p>
+    <div class="topic-grid">
+      <article><h3>🏗️ Ingeniería</h3><p>Modelos, medidas, fuerzas, estructuras, datos y optimización ayudan a diseñar y resolver problemas reales.</p></article>
+      <article><h3>🏛️ Arquitectura</h3><p>Geometría, proporciones, escalas, áreas, volúmenes y funciones aparecen al diseñar espacios.</p></article>
+      <article><h3>💻 Tecnología</h3><p>Álgebra, lógica, estadística y funciones ayudan a programar, analizar datos y crear sistemas.</p></article>
+      <article><h3>💼 Economía y empresa</h3><p>Porcentajes, funciones, estadística y optimización ayudan a estudiar precios, costes, ingresos y decisiones.</p></article>
+      <article><h3>🔬 Ciencia</h3><p>Las matemáticas permiten medir, modelizar fenómenos y analizar resultados.</p></article>
+      <article><h3>📐 Matemáticas puras</h3><p>Investigar matemáticas significa profundizar en estructuras, demostraciones, patrones y problemas abstractos.</p></article>
+    </div>
+    <h3>Preguntas para pensar</h3>
+    <div id="lifeQuestions"></div>
+  </section>
+
+  <section id="economia" class="section hidden">
+    <h2>💼 Economía — Aprende y aplica</h2>
+    <p>La economía también está presente en decisiones cotidianas: comprar, ahorrar, comparar, emprender y gestionar recursos.</p>
+    <div id="ecoQuestions"></div>
+    <div class="callout">
+      <h3>🚀 Seguir aprendiendo</h3>
+      <p>Si te interesa administración de empresas o crear tu propia empresa, puedes profundizar en costes, ingresos, beneficios, mercado, oferta y demanda, financiación, marketing, organización, inversión y emprendimiento.</p>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
